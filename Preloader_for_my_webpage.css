@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.preloader-block {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background-color: black;
+			transition: 800ms ease;
+			-o-transition: 800ms ease;
+			-mozila-transition: 800ms ease;
+			-webkit-transition: 800ms ease;
+		}
+
+		.preloader-block.h {
+            opacity: .8;
+		}
+
+		.preloader-block.h2 {
+			opacity: .4;
+			background-blend-mode: darken;
+		}
+
+		.preloader-block.hide {
+			display: none;
+		}
+
+		.preloader-block #img_p {
+			height: 105%;
+			width: 100%;
+			animation: image 5s linear infinite alternate;
+		}
+
+		@keyframes image {
+			0% {
+              opacity: 1;
+              background-blend-mode: normal;
+			}
+
+			100% {
+              opacity: .3;
+              background-blend-mode: darken;
+			}
+		}
+        
+       .preloader-block .loading {
+       	    height: 100px;
+       	    width: 210px;
+       	    position: fixed;
+       	    border-radius: 10px;
+       	    cursor: pointer;
+       	    top: 580px;
+       	    left: 680px;
+       }
+
+       .preloader-block .loading #c {
+       	    font-size: 100px;
+       	    font-family: 'Patrick Hand', cursive;
+       	    color: white;
+       	    position: absolute;
+       	    margin-top: -15px;
+       	    transition: 800ms ease;
+       	    -o-transition: 800ms ease;
+       	    -mozila-transition: 800ms ease;
+       	    -webkit-transition: 800ms ease;
+       }
+
+       .preloader-block .loading #c.a {
+       	    opacity: .8;
+       }
+
+       .preloader-block .loading #c .a2 {
+       	   opacity: .4;
+       }
+
+       .preloader-block .loading #p {
+       	    font-size: 100px;
+       	    font-family: 'Patrick Hand', cursive;
+       	    color: white;
+       	    margin-left: 140px;
+       	    position: absolute;
+       	    margin-top: -15px;
+       	    transition: 800ms ease;
+       	    -o-transition: 800ms ease;
+       	    -mozila-transition: 800ms ease;
+       	    -webkit-transition: 800ms ease;
+       }
+
+       .preloader-block .loading #p.p {
+       	   opacity: .8;
+       }
+
+       .preloader-block .loading #p.p2 {
+       	   opacity: .4;
+       }
+
+       .preloader-block .progress-bar {
+       	   height: 25px;
+       	   cursor: pointer;
+       	   border: 3px solid black;
+       	   border-radius: 5px;
+       	   background-color: yellow;
+       	   position: fixed;
+       	   top: 700px;
+       	   left: 625px;
+       	   transition: 800ms ease;
+       	   -o-transition: 800ms ease;
+       	   -mozila-transition: 800ms ease;
+       	   -webkit-transition: 800ms ease;
+       }
+
+       .preloader-block .progress-bar.c {
+           opacity: .8;  
+       }
+
+       .preloader-block .progress-bar.c2 {
+       	   opacity: .4;
+       }
+
+       .preloader-block .progress-bar:hover {
+       	   opacity: .7;
+       }
